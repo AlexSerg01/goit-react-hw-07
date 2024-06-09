@@ -3,16 +3,10 @@ import { useId } from "react";
 import * as Yup from "yup";
 import { ErrorMessage } from "formik";
 import { useDispatch } from "react-redux";
-
 import css from "./ContactForm.module.css";
-import { addContact } from "../../redux/contactsSlice";
-
-// import { useSelector } from "react-redux"
-// import { getContacts } from "../../redux/selectors"
+import { addContact } from "../../redux/contactsOps";
 
 export default function ContactForm() {
-  //  const items = useSelector(getContacts)
-  // console.log(items)
   const nameId = useId();
   const telId = useId();
   const itemId = Math.random();
